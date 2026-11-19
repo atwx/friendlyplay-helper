@@ -1,1 +1,10 @@
-# see https://docs.silverstripe.org/en/developer_guides/configuration/configuration/
+---
+Name: friendlyplay-helper
+---
+# Zugangsdaten kommen aus der Umgebung (.env):
+#   FRIENDLYPLAY_URL     Adresse des friendlyplay-Servers (optional, sonst base_url)
+#   FRIENDLYPLAY_ACCESS  Zugangs-ID (gk_…)
+#   FRIENDLYPLAY_CODE    Zugangscode (gs_…) – geheim, nie ins Repository!
+Atwx\FriendlyPlay\FriendlyPlay:
+  base_url: 'https://friendlyplay.atw.cx'
+  timeout: 5
